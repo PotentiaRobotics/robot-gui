@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #181c20;
+    color: white;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: black;
+    gap: 0.33333333vw;
+    height: 99.5vh;
+}
+.main-element {
+    display: inline-block;
+    height: 99.5vh;
+    width: 32vw;
+    text-align: center;
+    background-color: #181c20;
+    position: relative;
+}
+
+.robotimg {
+    height: 99.5vh;
+    width: 32vw;
+}
+.btn-2 {
+    text-decoration: none;
+    background-color: #223344;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2.2vw;
+    padding-right: 2.2vw;
+}
+
+.panel2-btns {
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+    text-align: center;
+}
+.dropdowns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 99.5vh;
+
+    justify-content: flex-start;
+    gap: 22vh;
+}
+.dropdown {
+    position: relative;
+    background-color: #223344;
+    width: 70%;
+    text-align: center;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+}
+.d1 {
+    justify-self: flex-start;
+    margin-top: 2.5vh;
+}
+.dddown1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 4.8vw;
+    top: 9.65vh;
+
+    background-color: #223344;
+}
+.dddown2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 4.8vw;
+    top: 38.6vh;
+
+    background-color: #223344;
+}
+.dddown3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 4.8vw;
+    top: 67.55vh;
+
+    background-color: #223344;
+}
+.delement {
+    background-color: #223344;
+    padding: 0.4vw 1vw;
+}
+.img-part {
+    background-color: #223344;
+    height: 5vh;
+}
+
+.measure {
+    background-color: #fceaea;
+    color: black;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 3.5vh;
+    height: 3vh;
+}
+.units {
+    background-color: #fceaea;
+    color: black;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-top: 0.5vh;
+    padding-bottom: 3.5vh;
+    height: 3vh;
+}
+
+.panel3-btns {
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.6vw;
+    text-align: center;
+}
+.btn-3 {
+    text-decoration: none;
+    background-color: #223344;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.angle-view {
+    width: 8vw;
+    background-color: #778899;
+}
+
+.angle-rot-header {
+    margin-top: 10%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 24vw;
+    padding: 3vh 0;
+    margin-left: 4vw;
+    background-color: #223344;
+}
+.angle-rot {
+    background-color: #223344;
+}
+
+.position-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    row-gap: 0.5vw;
+    column-gap: 1vw;
+    width: 12vw;
+    background-color: black;
+    padding: 0.3vw 5px;
+    font-size: 36px;
+    margin-left: 10vw;
+    margin-top: 2vw;
+}
+.pos-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #223344;
+}
+.pos-angle-num,
+.pos-img {
+    background-color: #223344;
+}
+.pos-angle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #223344;
+}
+
+/* .img-dd:hover {
+} */
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
