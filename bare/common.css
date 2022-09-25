@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #181c20;
+    color: white;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: black;
+    gap: 0.33333333vw;
+    height: 99.5vh;
+}
+.main-element {
+    display: inline-block;
+    height: 99.5vh;
+    width: 32vw;
+    text-align: center;
+    background-color: #181c20;
+    position: relative;
+}
