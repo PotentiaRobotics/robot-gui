@@ -12,7 +12,7 @@
         <title>Potentia Robotics GUI</title>
     </head>
     <body>
-        <div class="main-container ifsmall">
+        <div class="main-container">
             <div class="main-element e1">
                 <img src="robot.png" class="robotimg" />
             </div>
@@ -21,43 +21,68 @@
                     <div class="dropdown d1">
                         <img src="img-knee.png" class="img-part" />
                         <p class="measure">360</p>
+                        <label for="fname">Input</label>
+
+                        <input
+                            class="inputbox"
+                            type="text"
+                            id="fname"
+                            name="fname"
+                        />
+                        <button class="button">Enter</button>
                         <p class="units">Deg</p>
-                        <img src="drop-img.png" class="img-part img-dd" />
+                        <select name="input" id="unit">
+                            <option value="Position">Position</option>
+                            <option value="Percent">Percent</option>
+                            <option value="Velocity">Velocity</option>
+                            <option value="Voltage">Voltage</option>
+                            <option value="Force">Force</option>
+                        </select>
                     </div>
-                    <div class="dddown1">
-                        <a class="delement" href="#">Position</>
-                        <a class="delement" href="#">Percent</a>
-                        <a class="delement" href="#">Velocity</a>
-                        <a class="delement" href="#">Force</p>
-                        <a class="delement" href="#">Voltage</a>
-                    </div>
+
                     <div class="dropdown d2">
                         <img src="img-knee.png" class="img-part" />
                         <p class="measure">360</p>
+                        <label for="fname">Input</label>
+
+                        <input
+                            class="inputbox"
+                            type="text"
+                            id="fname"
+                            name="fname"
+                        />
+                        <button class="button">Enter</button>
                         <p class="units">Deg</p>
-                        <img src="drop-img.png" class="img-part img-dd" />
+                        <select name="input" id="unit">
+                            <option value="Position">Position</option>
+                            <option value="Percent">Percent</option>
+                            <option value="Velocity">Velocity</option>
+                            <option value="Voltage">Voltage</option>
+                            <option value="Force">Force</option>
+                        </select>
                     </div>
-                    <div class="dddown2">
-                        <a class="delement" href="#">Position</>
-                        <a class="delement" href="#">Percent</a>
-                        <a class="delement" href="#">Velocity</a>
-                        <a class="delement" href="#">Force</p>
-                        <a class="delement" href="#">Voltage</a>
-                    </div>
+
                     <div class="dropdown d3">
                         <img src="img-knee.png" class="img-part" />
                         <p class="measure">360</p>
+                        <label for="fname">Input</label>
+
+                        <input
+                            class="inputbox"
+                            type="text"
+                            id="fname"
+                            name="fname"
+                        />
+                        <button class="button">Enter</button>
                         <p class="units">Deg</p>
-                        <img src="drop-img.png" class="img-part img-dd" />
+                        <select name="input" id="unit">
+                            <option value="Position">Position</option>
+                            <option value="Percent">Percent</option>
+                            <option value="Velocity">Velocity</option>
+                            <option value="Voltage">Voltage</option>
+                            <option value="Force">Force</option>
+                        </select>
                     </div>
-                    <div class="dddown3">
-                        <a class="delement" href="#">Position</>
-                        <a class="delement" href="#">Percent</a>
-                        <a class="delement" href="#">Velocity</a>
-                        <a class="delement" href="#">Force</p>
-                        <a class="delement" href="#">Voltage</a>
-                    </div>
-                    
                 </div>
 
                 <div class="panel2-btns">
@@ -83,12 +108,10 @@
                 </div>
                 <div class="angle-rot-header">
                     <p class="angle-rot">Angle Rotation</p>
-
-                    
                 </div>
                 <div class="position-grid">
                     <div class="pos-num">
-                        <p  class="pos-angle-num">1</p>
+                        <p class="pos-angle-num">1</p>
                     </div>
                     <div class="pos-angle">
                         <img src="img-knee.png" class="pos-img" />
@@ -98,66 +121,65 @@
                         <p class="pos-angle-num">2</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">3</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">4</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">5</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">6</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">7</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">8</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">9</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png" class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
                     <div class="pos-num">
                         <p class="pos-angle-num">10</p>
                     </div>
                     <div class="pos-angle">
-                        <img src="img-knee.png"  class="pos-img"/>
+                        <img src="img-knee.png" class="pos-img" />
                         <p class="pos-angle-num">57</p>
                     </div>
-
                 </div>
             </div>
         </div>
