@@ -1,5 +1,3 @@
-<!-- templates/base.html -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,9 +9,157 @@
         <link rel="stylesheet" href="{{ ASSET_URL }}" />
         {% endassets %}
 
-        <title>Flask + htmlx + Tailwind CSS</title>
+        <title>Potentia Robotics GUI</title>
     </head>
-    <body class="bg-blue-100">
-        {% block content %} {% endblock content %}
+    <body>
+        <div class="main-container ifsmall">
+            <div class="main-element e1">
+                <img src="robot.png" class="robotimg" />
+            </div>
+            <div class="main-element e2">
+                <div class="dropdowns">
+                    <div class="dropdown d1">
+                        <img src="img-knee.png" class="img-part" />
+                        <p class="measure">360</p>
+                        <p class="units">Deg</p>
+                        <img src="drop-img.png" class="img-part img-dd" />
+                    </div>
+                    <div class="dddown1">
+                        <a class="delement" href="#">Position</>
+                        <a class="delement" href="#">Percent</a>
+                        <a class="delement" href="#">Velocity</a>
+                        <a class="delement" href="#">Force</p>
+                        <a class="delement" href="#">Voltage</a>
+                    </div>
+                    <div class="dropdown d2">
+                        <img src="img-knee.png" class="img-part" />
+                        <p class="measure">360</p>
+                        <p class="units">Deg</p>
+                        <img src="drop-img.png" class="img-part img-dd" />
+                    </div>
+                    <div class="dddown2">
+                        <a class="delement" href="#">Position</>
+                        <a class="delement" href="#">Percent</a>
+                        <a class="delement" href="#">Velocity</a>
+                        <a class="delement" href="#">Force</p>
+                        <a class="delement" href="#">Voltage</a>
+                    </div>
+                    <div class="dropdown d3">
+                        <img src="img-knee.png" class="img-part" />
+                        <p class="measure">360</p>
+                        <p class="units">Deg</p>
+                        <img src="drop-img.png" class="img-part img-dd" />
+                    </div>
+                    <div class="dddown3">
+                        <a class="delement" href="#">Position</>
+                        <a class="delement" href="#">Percent</a>
+                        <a class="delement" href="#">Velocity</a>
+                        <a class="delement" href="#">Force</p>
+                        <a class="delement" href="#">Voltage</a>
+                    </div>
+                    
+                </div>
+
+                <div class="panel2-btns">
+                    <a class="btn-2 power" href="https://google.com">Power</a>
+                    <a class="btn-2 battery" href="https://google.com"
+                        >Battery</a
+                    >
+                </div>
+            </div>
+            <div class="main-element e3">
+                <div class="panel3-btns">
+                    <a class="btn-3 manual" href="https://google.com">Manual</a>
+                    <a class="btn-3 semi-automatic" href="https://google.com"
+                        >SA</a
+                    >
+
+                    <a class="btn-3 automatic" href="https://google.com"
+                        >Manual</a
+                    >
+                    <a class="btn-3 angle-view" href="https://google.com"
+                        >Angle&nbsp;View</a
+                    >
+                </div>
+                <div class="angle-rot-header">
+                    <p class="angle-rot">Angle Rotation</p>
+
+                    
+                </div>
+                <div class="position-grid">
+                    <div class="pos-num">
+                        <p  class="pos-angle-num">1</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png" class="pos-img" />
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">2</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">3</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">4</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">5</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">6</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">7</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">8</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">9</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png" class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+                    <div class="pos-num">
+                        <p class="pos-angle-num">10</p>
+                    </div>
+                    <div class="pos-angle">
+                        <img src="img-knee.png"  class="pos-img"/>
+                        <p class="pos-angle-num">57</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>
