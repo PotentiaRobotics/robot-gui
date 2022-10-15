@@ -10,6 +10,10 @@
     padding-left: 2.2vw;
     padding-right: 2.2vw;
 }
+.button {
+    background-color: #223344;
+    border-color: #223344;
+}
 
 .panel2-btns {
     position: absolute;
@@ -80,6 +84,9 @@
 .img-part {
     background-color: #223344;
     height: 5vh;
+}
+.inputbox {
+    width: 80px;
 }
 
 .measure {
