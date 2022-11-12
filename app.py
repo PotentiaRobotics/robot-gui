@@ -31,7 +31,8 @@ def sendData():
     rece=s.recv(1024)
     print("Received",rece)
     s.close()
-    return render_template("index.html")
+    rece = "Confirm Sent: "+rece.decode("ASCII")
+    return render_template("index.html", conf=rece)
 
 if __name__ == "__main__":
     app.run(debug=True)
