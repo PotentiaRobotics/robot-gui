@@ -27,15 +27,23 @@
                             class="img-part"
                         />
                         <p class="measure">360</p>
-                        <label for="fname">Input</label>
 
-                        <input
-                            class="inputbox"
-                            type="text"
-                            id="userInput"
-                            name="fname"
-                        />
-                        <button class="button" onclick="server.printinput()">Enter</button>
+
+                        <form
+                            action='{{ url_for("sendData")}}'
+                            class="enter-angle"
+                            method="POST"
+                        >
+                            <label for="rot">Input</label>
+                            <input
+                                class="inputbox"
+                                type="text"
+                                id="rot"
+                                name="rot"
+                            />
+                            <input type="submit" value="Enter" />
+                        </form>
+
                         <p class="units">Deg</p>
                         <select name="input" id="unit">
                             <option value="Position">Position</option>
