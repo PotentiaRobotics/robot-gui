@@ -29,7 +29,6 @@
                         />
                         <p class="measure">360</p>
 
-
                         <form
                             action='{{ url_for("sendData")}}'
                             class="enter-angle"
@@ -61,14 +60,20 @@
                             class="img-part"
                         />
                         <p class="measure">360</p>
-                        <label for="fname">Input</label>
-
-                        <input
-                            class="inputbox"
-                            type="text"
-                            id="fname"
-                            name="fname"
-                        />
+                        <form
+                            action='{{ url_for("sendData")}}'
+                            class="enter-angle"
+                            method="POST"
+                        >
+                            <label for="rot">Input</label>
+                            <input
+                                class="inputbox"
+                                type="text"
+                                id="rot"
+                                name="rot"
+                            />
+                            <input type="submit" value="Enter" />
+                        </form>
                         <button class="button">Enter</button>
                         <p class="units">Deg</p>
                         <select name="input" id="unit">
@@ -86,14 +91,20 @@
                             class="img-part"
                         />
                         <p class="measure">360</p>
-                        <label for="fname">Input</label>
-
-                        <input
-                            class="inputbox"
-                            type="text"
-                            id="fname"
-                            name="fname"
-                        />
+                        <form
+                            action='{{ url_for("sendData")}}'
+                            class="enter-angle"
+                            method="POST"
+                        >
+                            <label for="rot">Input</label>
+                            <input
+                                class="inputbox"
+                                type="text"
+                                id="rot"
+                                name="rot"
+                            />
+                            <input type="submit" value="Enter" />
+                        </form>
                         <button class="button">Enter</button>
                         <p class="units">Deg</p>
                         <select name="input" id="unit">
