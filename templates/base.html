@@ -8,10 +8,16 @@
         {% assets 'css' %}
         <link rel="stylesheet" href="{{ ASSET_URL }}" />
         {% endassets %}
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+            integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
 
         <title>Potentia Robotics GUI</title>
     </head>
-    <body>
+    <body onload="getData()">
         <p>{{ conf }}</p>
         <div class="main-container">
             <div class="main-element e1">
@@ -154,5 +160,32 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            function getData() {
+                url = "/api/datapoint";
+                console.log("hi");
+                axios
+                    .get(url)
+                    .then(function (response) {
+                        // The data will all be returned as a JSON object
+                        // We can access the data by using the data property of the response object
+
+                        document.getElementById("load1").innerHTML =
+                            response.data.angle1;
+                        document.getElementById("load2").innerHTML =
+                            response.data.angle2;
+                        document.getElementById("load3").innerHTML =
+                            response.data.angle3;
+                        //document.getElementById('rawJsonDiv').innerHTML = JSON.stringify(response.data);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+
+            // This calls the function getRandomNumber() every 2 seconds
+            var intervalID = window.setInterval(getData, 200);
+        </script>
     </body>
 </html>

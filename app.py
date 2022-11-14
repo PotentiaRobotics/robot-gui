@@ -1,6 +1,6 @@
 # app.py
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask_assets import Bundle, Environment
 import random
 app = Flask(__name__)
@@ -15,6 +15,19 @@ css.build()
 @app.route("/")
 def homepage():
     return render_template("index.html")
+
+@app.route('/api/datapoint')
+def api_datapoint():
+
+    deg = [int(random.random() * 100) / 100 for _ in range(3)]
+    dictionary_to_return = {
+        'angle1': deg[0],
+        'angle2': deg[1],
+        'angle3': deg[2]
+    }
+
+    return jsonify(dictionary_to_return)
+
 
 @app.route("/sendData", methods =["GET", "POST"])
 def sendData():
@@ -39,10 +52,7 @@ def sendData():
         return render_template("index.html", conf='Invalid Input "'+rot+'"')
     except:
         return render_template("index.html", conf='Timeout: Unable to reach Pi')
-@app.context_processor
-def inject_load1():
-    deg = [int(random.random() * 100) / 100 for _ in range(3)]
-    return {'load1': deg[0], 'load2': deg[1], 'load3' :deg[2]}
+
 if __name__ == "__main__":
     app.run(debug=True)
 
