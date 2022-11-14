@@ -27,6 +27,7 @@ def sendData():
         s=socket.socket()
         host="raspberrypi"       #This is your Server IP!
         port=2345
+        s.settimeout(5)
         s.connect((host,port))
         s.send(str(rot).encode())
         rece=s.recv(1024)
@@ -36,6 +37,9 @@ def sendData():
         return render_template("index.html", conf=rece)
     except ValueError:
         return render_template("index.html", conf='Invalid Input "'+rot+'"')
+    except:
+        return render_template("index.html", conf='Timeout: Unable to reach Pi')
+
 if __name__ == "__main__":
     app.run(debug=True)
 
