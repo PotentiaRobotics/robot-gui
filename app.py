@@ -2,7 +2,7 @@
 
 from flask import Flask, render_template, request
 from flask_assets import Bundle, Environment
-
+import random
 app = Flask(__name__)
 
 assets = Environment(app)
@@ -39,7 +39,10 @@ def sendData():
         return render_template("index.html", conf='Invalid Input "'+rot+'"')
     except:
         return render_template("index.html", conf='Timeout: Unable to reach Pi')
-
+@app.context_processor
+def inject_load1():
+    deg = [int(random.random() * 100) / 100 for _ in range(3)]
+    return {'load1': deg[0], 'load2': deg[1], 'load3' :deg[2]}
 if __name__ == "__main__":
     app.run(debug=True)
 

@@ -27,7 +27,7 @@
                             src="{{url_for('static', filename='images/img-knee.png')}}"
                             class="img-part"
                         />
-                        <p class="measure">360</p>
+                        <p class="measure load1" id="load1">{{ load1 }}</p>
 
                         <form
                             action='{{ url_for("sendData")}}'
@@ -59,7 +59,7 @@
                             src="{{url_for('static', filename='images/img-knee.png')}}"
                             class="img-part"
                         />
-                        <p class="measure">360</p>
+                        <p class="measure load2" id="load2">{{ load2 }}</p>
                         <form
                             action='{{ url_for("sendData")}}'
                             class="enter-angle"
@@ -89,7 +89,7 @@
                             src="{{url_for('static', filename='images/img-knee.png')}}"
                             class="img-part"
                         />
-                        <p class="measure">360</p>
+                        <p class="measure load3" id="load3">{{ load3 }}</p>
                         <form
                             action='{{ url_for("sendData")}}'
                             class="enter-angle"
