@@ -1,0 +1,20 @@
+<div class="dropdown d2">
+    <img
+        src="{{url_for('static', filename='images/img-knee.png')}}"
+        class="img-part"
+    />
+    <p class="measure load2" id="load2">{{ load2 }}</p>
+    <form action='{{ url_for("sendData")}}' class="enter-angle" method="POST">
+        <label for="rot">Input</label>
+        <input class="inputbox" type="text" id="rot" name="rot" />
+        <input type="submit" value="Enter" />
+    </form>
+    <p class="units">Deg</p>
+    <select name="input" id="unit">
+        <option value="Position">Position</option>
+        <option value="Percent">Percent</option>
+        <option value="Velocity">Velocity</option>
+        <option value="Voltage">Voltage</option>
+        <option value="Force">Force</option>
+    </select>
+</div>

@@ -16,7 +16,7 @@ css.build()
 def homepage():
     return render_template("index.html")
 
-@app.route("/base.html", methods =["GET", "POST"])
+@app.route("/sendData", methods =["GET", "POST"])
 def sendData():
             
     rot = request.form.get("rot")
