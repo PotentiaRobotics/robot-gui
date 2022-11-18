@@ -5,17 +5,11 @@ The web server is meant to run on a flask backend, but we currently just run it 
 
 ### Code Description
 
-`bare/` Files containing the actual vanilla server, with vanilla HTML and CSS code.
+As of now, the code **is** integrated with the flask server, which is able to send commands to the RaspberryPi via python's socket library.
 
--   `bare/index.html` is the main HTML file of the server.
--   `bare/style.css` is the main CSS file of the server. Currently is just vanilla without tailwind framework.
--   All other files are images used in the server.
-
-All of our other files are related to the flask backend, but do not contain any meaningful server code:
-
--   `static/` contains placeholder CSS files to be integrated into the flask application.
--   `templates/` contains placeholder HTML filess to be integrated into the flask application.
--   `app.py` is the flask application to be run. If backend were integrated the command to initiate the server is `python app.py`.
+-   `static/` contains CSS files integrated into the flask application for styling purposes.
+-   `templates/` contains the HTML pages we display in our gui.
+-   `app.py` is the flask application to be run. This features both intialization of pages and can send/recieve commands 
 -   `tailwind.config.js` configures tailwind.
 
 ### Setup and Run.
@@ -26,10 +20,16 @@ All of our other files are related to the flask backend, but do not contain any 
 git clone https://github.com/PotentiaRobotics/robot-gui.git
 ```
 
-2. `cd` to `bare/` directory
+2. Install required libraries (`requirements.txt` to be generated, for now just install what is required in `app.py`)
 
+3. Set up RaspberryPi server code (to be uploaded to this repo) and allow port 2345 and 2346
+
+4. Run server code on the RaspberryPi
 ```
-cd bare/
+python server1.py
 ```
 
-3. Run live server on `index.html` or open `index.html` with web browser
+5. Initialize client
+```
+python app.py
+```
