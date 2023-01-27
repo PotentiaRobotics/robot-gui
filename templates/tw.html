@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind file</title>
+        <link rel="stylesheet"
+            href="{{url_for('static',filename='dist/css/output.css')}}">
+    </head>
+    <body class="bg-black">
+
+
+
+        <div class="bg-black">
+            <!-- 3 Collums -->
+            <div class="grid grid-cols-3 gap-6 bg-black">
+
+                <div class="bg-slate-600 ml-3 h-screen">
+                    <!-- import an an image from the static/image folder -->
+                    <img src="{{url_for('static',filename='images/robot.png')}}"
+                        alt="image" class="w-full h-full">
+                </div>
+                <!-- Input buttons -->
+                <div class="bg-slate-600">
+
+                    <div class="grid grid-cols-1 grid-rows-3 gap-24 mt-5 ">
+                        <!-- Button 1 -->
+                        <div class="mx-auto w-10/12 bg-slate-900 grid
+                            grid-cols-3
+                            gap-6">
+
+                            <div class="my-auto">
+
+                                <!-- Knee joint pic -->
+                                <img class="m-auto"
+                                    src="{{url_for('static',filename='images/img-knee.png')}}"
+                                    alt="image" class="w-full h-full">
+                            </div>
+
+                            <!-- Input -->
+                            <div>
+                                <!-- Make an input with a button -->
+                                <form action="/action_page.php">
+                                    <input class="mt-1 w-11/12" type="text"
+                                        name="fname"
+                                        value="Enter angle">
+
+                                    <button class="rounded-lg bg-yellow-300
+                                        mt-1"
+                                        type="submit"> <div class="mx-3">Submit</div>
+                                    </button>
+                                </div>
+                                <!-- Make a dropdown menu with options for position/force -->
+                                <div class="my-auto">
+                                    <select name="" class="bg-black
+                                        text-yellow-400">
+                                        <option value="">Position</option>
+                                        <option value="">Percent</option>
+                                        <option value="">Velocity</option>
+                                        <option value="">Volatage</option>
+                                        <option value="">Force</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mx-auto w-10/12 bg-slate-900 grid
+                                grid-cols-3
+                                gap-5">
+
+                                <div class="my-auto">
+
+                                    <!-- Knee joint pic -->
+                                    <img class="m-auto"
+                                        src="{{url_for('static',filename='images/img-knee.png')}}"
+                                        alt="image" class="w-full h-full">
+                                </div>
+
+                                <!-- Input -->
+                                <div>
+                                    <!-- Make an input with a button -->
+                                    <form action="/action_page.php">
+                                        <input class="mt-1 w-11/12" type="text"
+                                            name="fname"
+                                            value="Enter angle">
+
+                                        <button class="rounded-lg bg-yellow-300
+                                            mt-1"
+                                            type="submit"> <div class="mx-3">Submit</div>
+                                        </button>
+                                    </div>
+                                    <!-- Make a dropdown menu with options for position/force -->
+                                    <div class="my-auto">
+                                        <select name="">
+                                            <option value="">Position</option>
+                                            <option value="">Percent</option>
+                                            <option value="">Velocity</option>
+                                            <option value="">Volatage</option>
+                                            <option value="">Force</option>
+                                        </select>
+                                    </div>
+                                    <!-- create 3 buttons in a row, each should have centered text, and should be near the bottom of the screen -->
+                                </div>
+
+
+
+
+                                <div class="mx-auto w-10/12 bg-slate-900 grid
+                                    grid-cols-3
+                                    gap-5">
+
+                                    <div class="my-auto">
+
+                                        <!-- Knee joint pic -->
+                                        <img class="m-auto"
+                                            src="{{url_for('static',filename='images/img-knee.png')}}"
+                                            alt="image" class="w-full h-full">
+                                    </div>
+
+                                    <!-- Input -->
+                                    <div>
+                                        <!-- Make an input with a button -->
+                                        <form action="/action_page.php">
+                                            <input class="mt-1 w-11/12"
+                                                type="text"
+                                                name="fname"
+                                                value="Enter angle">
+
+                                            <button class="rounded-lg
+                                                bg-yellow-300
+                                                mt-1"
+                                                type="submit"> <div
+                                                    class="mx-3">Submit</div>
+                                            </button>
+                                        </div>
+                                        <!-- Make a dropdown menu with options for position/force -->
+                                        <div class="my-auto">
+                                            <select name="cars">
+                                                <option value="volvo">Position</option>
+                                                <option value="saab">Percent</option>
+                                                <option value="saab">Velocity</option>
+                                                <option value="saab">Volatage</option>
+                                                <option value="saab">Force</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Create 3 buttons in a row near the bottom of the screen -->
+                                    <div class="grid grid-cols-2 gap-4 mx-32
+                                        mt-56">
+                                        <button class="bg-gray-800 h-12
+                                            text-white">Power</button>
+                                        <button class="bg-gray-800 h-12
+                                            text-white">Battery</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Screen 3 -->
+
+
+                            <div class="bg-slate-600 mr-3 ">
+                                <div class=" h-20 mt-10 mx-10
+                                    bg-blue-900">
+                                    <div class="my-auto text-center ">
+                                        <h1 class="text-2xl text-yellow-400">Angle
+                                            Rotation</h1>
+
+                                    </div>
+
+                                </div>
+                                <!-- make a grid with 1 collum and 1 row -->
+                                <div class="grid grid-cols-1 mt-12
+                                    gap-0">
+
+                                    <div class="bg-gray-700 h-16 mx-32 grid
+                                        grid-cols-3 ">
+                                        <div class="bg-yellow-500 m-2 w-14
+                                            ">
+                                            <h1 class="text-center font-serif
+                                                text-4xl">1</h1></div>
+                                        <div class="bg-red-500 col-span-2 m-2
+                                            grid grid-cols-2 ">
+                                            <!-- Link an image from images folder -->
+                                            <img class="m-auto"
+                                                src="{{url_for('static',filename='images/img-knee.png')}}"
+                                                alt="image"
+                                                class="w-full h-full">
+                                            <div class="my-auto">
+                                                <h1 class="text-center
+                                                    font-serif mb-2
+                                                    text-4xl">57</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-700 h-16 mx-32 grid
+                                        grid-cols-3 ">
+                                        <div class="bg-yellow-500 m-2 w-14
+                                            ">
+                                            <h1 class="text-center font-serif
+                                                text-4xl">2</h1></div>
+                                        <div class="bg-red-500 col-span-2 m-2
+                                            grid grid-cols-2 ">
+                                            <!-- Link an image from images folder -->
+                                            <img class="m-auto"
+                                                src="{{url_for('static',filename='images/img-knee.png')}}"
+                                                alt="image"
+                                                class="w-full h-full">
+                                            <div class="my-auto">
+                                                <h1 class="text-center
+                                                    font-serif mb-2
+                                                    text-4xl">57</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-700 h-16 mx-32 grid
+                                        grid-cols-3 ">
+                                        <div class="bg-yellow-500 m-2 w-14
+                                            ">
+                                            <h1 class="text-center font-serif
+                                                text-4xl">3</h1></div>
+                                        <div class="bg-red-500 col-span-2 m-2
+                                            grid grid-cols-2 ">
+                                            <!-- Link an image from images folder -->
+                                            <img class="m-auto"
+                                                src="{{url_for('static',filename='images/img-knee.png')}}"
+                                                alt="image"
+                                                class="w-full h-full">
+                                            <div class="my-auto">
+                                                <h1 class="text-center
+                                                    font-serif mb-2
+                                                    text-4xl">57</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-700 h-16 mx-32 grid
+                                        grid-cols-3 ">
+                                        <div class="bg-yellow-500 m-2 w-14
+                                            ">
+                                            <h1 class="text-center font-serif
+                                                text-4xl">4</h1></div>
+                                        <div class="bg-red-500 col-span-2 m-2
+                                            grid grid-cols-2 ">
+                                            <!-- Link an image from images folder -->
+                                            <img class="m-auto"
+                                                src="{{url_for('static',filename='images/img-knee.png')}}"
+                                                alt="image"
+                                                class="w-full h-full">
+                                            <div class="my-auto">
+                                                <h1 class="text-center
+                                                    font-serif mb-2
+                                                    text-4xl">57</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-700 h-16 mx-32 grid
+                                        grid-cols-3 ">
+                                        <div class="bg-yellow-500 m-2 w-14
+                                            ">
+                                            <h1 class="text-center font-serif
+                                                text-4xl">5</h1></div>
+                                        <div class="bg-red-500 col-span-2 m-2
+                                            grid grid-cols-2 ">
+                                            <!-- Link an image from images folder -->
+                                            <img class="m-auto"
+                                                src="{{url_for('static',filename='images/img-knee.png')}}"
+                                                alt="image"
+                                                class="w-full h-full">
+                                            <div class="my-auto">
+                                                <h1 class="text-center
+                                                    font-serif mb-2
+                                                    text-4xl">57</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-700 h-16 mx-32 grid
+                                        grid-cols-3 ">
+                                        <div class="bg-yellow-500 m-2 w-14
+                                            ">
+                                            <h1 class="text-center font-serif
+                                                text-4xl">6</h1></div>
+                                        <div class="bg-red-500 col-span-2 m-2
+                                            grid grid-cols-2 ">
+                                            <!-- Link an image from images folder -->
+                                            <img class="m-auto"
+                                                src="{{url_for('static',filename='images/img-knee.png')}}"
+                                                alt="image"
+                                                class="w-full h-full">
+                                            <div class="my-auto">
+                                                <h1 class="text-center
+                                                    font-serif mb-2
+                                                    text-4xl">57</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-700 h-16 mx-32 grid
+                                        grid-cols-3 ">
+                                        <div class="bg-yellow-500 m-2 w-14
+                                            ">
+                                            <h1 class="text-center font-serif
+                                                text-4xl">7</h1></div>
+                                        <div class="bg-red-500 col-span-2 m-2
+                                            grid grid-cols-2 ">
+                                            <!-- Link an image from images folder -->
+                                            <img class="m-auto"
+                                                src="{{url_for('static',filename='images/img-knee.png')}}"
+                                                alt="image"
+                                                class="w-full h-full">
+                                            <div class="my-auto">
+                                                <h1 class="text-center
+                                                    font-serif mb-2
+                                                    text-4xl">57</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="grid grid-cols-4 gap-4 mx-10
+                                    mt-20">
+                                    <button class="bg-gray-800 h-12 text-white">Manual</button>
+                                    <button class="bg-gray-800 h-12 text-white">SA</button>
+                                    <button class="bg-gray-800 h-12 text-white">Manual</button>
+                                    <button class="bg-cyan-600 h-12
+                                        text-white">Angle
+                                        view</button>
+                                </div>
+
+
+
+                            </body>
+                        </html>
