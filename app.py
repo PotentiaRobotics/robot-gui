@@ -16,6 +16,10 @@ css.build()
 def homepage():
     return render_template("index.html")
 
+@app.route("/tw")
+def tw():
+    return render_template("tw.html")
+
 #Modify to get data
 @app.route('/api/datapoint')
 def api_datapoint():
