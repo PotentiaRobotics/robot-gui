@@ -3,6 +3,12 @@
 A web server GUI hosted by flask which can be used to control the robot in manual, semi-automatic, and automatic modes.
 The web server is meant to run on a flask backend, but we currently just run it on vanilla HTML and CSS with no backend; we plan on integrating it with flask in the very near future.
 
+
+#TAILWIND UPDATE ---->>>> Use this turorial to setup folders. Main isntructions are listed below
+1. install tailwind:                -->    npm install -D tailwindcss
+2. Watch file to work with tailwind -->    npx tailwindcss -i ./static/src/input.css -o ./static/dist/css/output.css --watch
+
+
 ### Code Description
 
 As of now, the code **is** integrated with the flask server, which is able to send commands to the RaspberryPi via python's socket library.
