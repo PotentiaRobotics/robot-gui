@@ -15,10 +15,14 @@ css.build()
 @app.route("/")
 def homepage():
     return render_template("index.html")
-
+#Route for manual mode
 @app.route("/tw")
 def tw():
     return render_template("tw.html")
+#Route for automatic mode
+@app.route("/auto")
+def auto():
+    return render_template("auto.html")
 
 #Modify to get data
 @app.route('/api/datapoint')
