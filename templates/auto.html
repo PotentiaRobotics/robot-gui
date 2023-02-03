@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind file</title>
+        <link rel="stylesheet"
+            href="{{url_for('static',filename='dist/css/output.css')}}">
+    </head>
+    <body class="bg-black">
+
+
+
+        <div class="bg-black">
+            <!-- 3 Collums -->
+            <div class="grid grid-cols-3 gap-6 bg-black ">
+
+                <!-- Screen 1 -->
+                <div class="bg-slate-600 ml-3 h-screen ">
+
+                    <!-- Put refresh image in top left corner with some margin -->
+                    <div class="flex justify-start">
+                        <img
+                            src="../static/images/refresh.png"
+                            class="h-14 ml-3 mt-3">
+                    </div>
+
+                    <!-- Put the view.png image and a purple div below the image -->
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/view.png"
+                            class="h-80 mt-3">
+                    </div>
+                    <!-- Make a centered purple div -->
+
+                    <div class="bg-purple-600 h-14 mx-32 ">
+                        <h1 class="text-xl font-serif font-bold mx-5 my-1
+                            text-center
+                            ">FPV from
+                            olympian's
+                            camera</h1>
+                    </div>
+                    <!-- Put the LIDAR.png image and a purple div below the image -->
+                    <div class="flex justify-center mt-10">
+                        <img
+                            src="../static/images/LIDAR.png"
+                            class="h-80 mt-3">
+                    </div>
+                    <!-- Make a centered purple div -->
+
+                    <div class="bg-purple-600 h-14 mx-32 ">
+                        <h1 class="text-xl font-serif font-bold mx-5 my-1
+                            text-center
+                            ">FPV from
+                            olympian's
+                            camera</h1>
+                    </div>
+                </div>
+
+
+
+                <!-- Screen 2 -->
+                <div class="bg-slate-600">
+
+
+                    <!-- Place the map.png image, below it, put a header that says HERE with a circle next to it . Below it, make a button saying 'Choose target location'. Below that, put 2 buttons and a battery-->
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/map.png"
+                            class="h-80 mt-3">
+                    </div>
+                    <!-- Button and here -->
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/circle.png"
+                            class="h-10 mt-3">
+                        <h1 class="text-xl font-serif font-bold mx-5 my-1
+                            text-center
+                            ">HERE</h1>
+
+                    </div>
+                    <<!-- Choose target button -->
+                    <div class="flex justify-center">
+                        <button
+                            class="bg-purple-600 h-14 w-80 mt-3
+                            text-center
+                            ">Choose target
+                            location</button>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="flex justify-center mt-80">
+                        <button
+                            class="bg-purple-600 h-14 w-40 mt-3 mr-10
+                            text-center
+                            ">Power</button>
+                        <button
+                            class="bg-purple-600 h-14 w-40 mt-3
+                            text-center
+                            ">Battery</button>
+                        <div class="flex justify-center ml-10">
+                            <img
+                                src="../static/images/battery.png"
+                                class="h-14 mt-3 ">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Screen 3 -->
+
+
+                <div class="bg-slate-600 mr-3 ">
+                    <!-- Make a div that sayss "Graph of each joint. The div should have  a background color of gray" -->
+                    <div class="bg-blue-800 h-14 mx-32 mt-14 ">
+                        <h1 class="text-xl font-serif font-bold mx-5 my-1
+                            text-center
+                            ">Graph of each joint</h1>
+                    </div>
+                    <!-- Make 6 graph.png images below eachother -->
+
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/graph.png"
+                            class="h-32 mt-3">
+                    </div>
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/graph.png"
+                            class="h-32 mt-3">
+                    </div>
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/graph.png"
+                            class="h-32 mt-3">
+                    </div>
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/graph.png"
+                            class="h-32 mt-3">
+                    </div>
+                    <div class="flex justify-center">
+                        <img
+                            src="../static/images/graph.png"
+                            class="h-32 mt-3">
+                    </div>
+                    <div class="flex justify-center mt-10">
+                        <button
+                            class="bg-purple-600 h-14 w-40 mt-3 ml-1
+                            text-center
+                            ">Manual</button>
+                        <button
+                            class="bg-purple-600 h-14 w-40 mt-3 ml-1
+                            text-center
+                            ">Semi-Automatic</button>
+                        <button
+                            class="bg-purple-600 h-14 w-40 mt-3 ml-1
+                            text-center
+                            ">Automatic</button>
+                        <button
+                            class="bg-blue-600 h-14 w-40 mt-3 ml-1
+                            text-center
+                            ">Angle view</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
