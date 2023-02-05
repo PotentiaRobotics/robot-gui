@@ -24,6 +24,10 @@ def tw():
 def auto():
     return render_template("auto.html")
 
+@app.route("/semi")
+def semi():
+    return render_template("semi.html")
+
 #Modify to get data
 @app.route('/api/datapoint')
 def api_datapoint():
