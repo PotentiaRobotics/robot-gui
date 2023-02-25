@@ -16,9 +16,9 @@ css.build()
 def homepage():
     return render_template("index.html")
 #Route for manual mode
-@app.route("/tw")
+@app.route("/manual")
 def tw():
-    return render_template("tw.html")
+    return render_template("manual.html")
 #Route for automatic mode
 @app.route("/auto")
 def auto():
@@ -60,12 +60,16 @@ def sendData():
         print("Received",rece)
         s.close()
         rece = "Confirm Sent: "+rece.decode("ASCII")
-        return render_template("index.html", conf=rece)
+        return render_template("manual.html", conf=rece)
     except ValueError:
-        return render_template("index.html", conf='Invalid Input "'+rot+'"')
+        return render_template("manual.html", conf='Invalid Input "'+rot+'"')
     except:
-        return render_template("index.html", conf='Timeout: Unable to reach Pi')
+        return render_template("manual.html", conf='Timeout: Unable to reach Pi')
 
 if __name__ == "__main__":
     app.run(debug=True)
 
+#Commands to run
+# npm install -D tailwindcss
+#npx tailwindcss -i ./static/src/input.css -o ./static/dist/css/output.css --watch
+#python app.py
